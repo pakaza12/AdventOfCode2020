@@ -23,7 +23,7 @@ public class Day1 {
 		}
 		
 		for(int j = 0; j < i; j++) {
-			for(int k = 0; k < i; k++) {
+			for(int k = j+1; k < i; k++) {
 				if(inputNums[j] + inputNums[k] == 2020) {
 					System.out.println(inputNums[j] * inputNums[k]);
 				}
