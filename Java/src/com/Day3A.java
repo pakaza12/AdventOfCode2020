@@ -66,7 +66,6 @@ public class Day3A {
 			if(b > numRows) {
 				break;
 			}
-			System.out.print(graph[b][i]);
 			if(graph[b][i] == '.') {
 				graph[b][i] = 'O';
 				numNotTrees++;
@@ -75,13 +74,6 @@ public class Day3A {
 				numTrees++;
 			}
 			b+=downShift;
-		}
-		
-		for(int i = 0; i < numRows; i++) {
-			for(int j = 0; j < numColumnsNeeded+1; j++) {
-				System.out.print(graph[i][j]);
-			}
-			System.out.println();
 		}
 		
 		System.out.println(numTrees + " " + numNotTrees);
