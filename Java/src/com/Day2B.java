@@ -25,6 +25,7 @@ public class Day2B {
 			char[] password = token[2].toCharArray();
 			int numLetter = 0;
 			
+			//If statements, if both are the same letter, password = invalid, if neither are the letter, password = invalid
 			if( (password[Integer.parseInt(minMax[0])-1] == letter[0] && password[Integer.parseInt(minMax[1])-1] == letter[0]) || !(password[Integer.parseInt(minMax[0])-1] == letter[0] || password[Integer.parseInt(minMax[1])-1] == letter[0]) ) {
 				numInvalid++;
 			} else if(password[Integer.parseInt(minMax[0])-1] == letter[0] || password[Integer.parseInt(minMax[1])-1] == letter[0]) {
